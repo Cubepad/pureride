@@ -6,6 +6,8 @@
   --light-gray: rgb(243, 244, 246);
   --text-gray: rgb(55, 65, 81);
   --dark-gray: rgb(31, 41, 55);
+  --primary-shadow: rgba(0, 94, 227, 0.2);
+  --primary-shadow-darker: rgba(0, 94, 227, 0.3);
 }
 
 * {
