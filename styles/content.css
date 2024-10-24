@@ -43,7 +43,7 @@
 
 .service-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 15px 30px var(--primary-shadow-darker);
 }
 
 .service-title {
@@ -54,7 +54,7 @@
 }
 
 .service-title:first-of-type {
-  font-size: 2rem;
+  font-size: 1.9rem;
   margin-bottom: 0.5rem;
 }
 
@@ -87,6 +87,10 @@
   border-top: 1px solid var(--light-gray);
   color: var(--text-gray);
   font-size: 0.9rem;
+}
+
+.footnote p:first-of-type {
+  margin-bottom: 0.5rem;
 }
 
 .about-section {
