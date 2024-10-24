@@ -53,6 +53,11 @@
   margin-bottom: 1rem;
 }
 
+.service-title:first-of-type {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
 .service-list {
   list-style: none;
   padding: 0;
