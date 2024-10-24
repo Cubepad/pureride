@@ -136,7 +136,7 @@
     box-shadow: none;
   }
 
-  .right-section:focus-within .nav-links {
+  .nav-links.active {
     visibility: visible;
     opacity: 1;
     transform: translateY(0px);
