@@ -43,7 +43,7 @@
   color: var(--primary-color);
 }
 
-.nav-links li:nth-child(4) a {
+.nav-links li:nth-child(3) a {
   padding: 0.5rem 1rem;
   background-color: var(--primary-color);
   color: var(--pure-white);
@@ -54,7 +54,7 @@
   box-shadow: 0 4px 6px var(--primary-shadow);
 }
 
-.nav-links li:nth-child(4) a:hover {
+.nav-links li:nth-child(3) a:hover {
   background-color: var(--secondary-color);
   transform: translateY(-2px);
   box-shadow: 0 6px 8px var(--primary-shadow-darker);
@@ -120,7 +120,7 @@
     gap: 8px;
   }
 
-  .nav-links li:nth-child(4) a {
+  .nav-links li:nth-child(3) a {
     padding: 14px;
     background-color: transparent;
     color: var(--dark-gray);
@@ -129,7 +129,7 @@
     border-radius: 8px;
   }
 
-  .nav-links li:nth-child(4) a:hover {
+  .nav-links li:nth-child(3) a:hover {
     background-color: transparent;
     color: var(--primary-color);
     transform: none;
