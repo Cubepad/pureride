@@ -52,25 +52,22 @@
   font-weight: 600;
   transition: all 0.3s ease;
   box-shadow: 0 4px 6px var(--primary-shadow);
-} 
+}
 
 .nav-links li:nth-child(4) a:hover {
   background-color: var(--secondary-color);
   transform: translateY(-2px);
   box-shadow: 0 6px 8px var(--primary-shadow-darker);
-} 
+}
 
 /* Mobile Menu Styles */
 @media (min-width: 769px) {
   .mobile-menu-btn {
-      display: none;
+    display: none;
   }
-
 }
 
 @media (max-width: 768px) {
-
-
   .mobile-menu-btn {
     display: flex;
     flex-direction: column;
