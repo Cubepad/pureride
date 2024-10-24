@@ -56,10 +56,6 @@
   font-size: 1.5rem;
 }
 
-.contact-item a {
-  color: var(--text-gray);
-  text-decoration: none;
-}
 
 .contact-item:hover {
   background-color: var(--secondary-color);
@@ -80,5 +76,16 @@
 @media (max-width: 768px) {
   .contact-details {
     flex-direction: column;
+  }
+
+  .contact-item {
+    transition: none;
+    transform: none;
+    background-color: var(--primary-color); 
+  }
+
+  .contact-item:hover {
+    background-color: var(--primary-color); 
+    transform: none;
   }
 }
