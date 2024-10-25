@@ -8,12 +8,15 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
+    <link id="favicon16" rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link id="favicon96" rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link id="favicon32" rel="icon" type="image/png" sizes="192x192" href="/favicon/android-chrome-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/font.css" />
     <link rel="stylesheet" href="styles/hero.css" />
     <link rel="stylesheet" href="styles/footer.css" />
-    <link rel="stylesheet" href="styles/content.css" />
     <link rel="stylesheet" href="styles/add-ons.css" />
     <script defer src="script.js"></script>
   </head>
@@ -30,7 +33,7 @@
               <a href="index.html#services"> Services and Pricing </a>
             </li>
             <li>
-              <a href="extras.html"> Add-ons </a>
+              <a href="add-ons.html"> Add-ons </a>
             </li>
             <li>
               <a href="#contact"> Contact </a>
@@ -49,48 +52,38 @@
     </header>
 
     <main>
-      <section id="services" class="services">
-        <div class="services-container">
-          <h2 class="services-title">Extras</h2>
-          <p class="services-subtitle">Extra things to improve your bike</p>
+      <section id="add-ons" class="add-ons">
+        <div class="add-on-container">
+          <h2 class="add-ons-title">Add-ons</h2>
+          <p class="add-ons-subtitle">Nice extras to improve your bike</p>
           
-          <div class="services-grid">
-            <div class="service-card">
-              <h3 class="service-title">Bike Lights</h3>
-              <ul class="service-list">
-                <li>Cleaning of Drive Train and Bike (Dry Wash*)</li>
-                <li>Rust prevention treatment</li>
-                <li>Adjustment of brakes</li>
-                <li>Basic brake cleaning</li>
-              </ul>
+          <div class="add-on-grid">
+            <div class="add-on-card">
+              <h3 class="add-on-title">Bike Lights</h3>
+              <div class="add-on-image-container">
+                <img src="/images/bike-light.jpg" class="add-on-image">
+              </div>
             </div>
 
-            <div class="service-card">
-              <h3 class="service-title">Handle Bars</h3>
-              <ul class="service-list">
-                <li>Cleaning of drivetrain and bike (Wet Wash*)</li>
-                <li>Polishing and rust prevention of bike</li>
-                <li>Adjustment of brakes</li>
-                <li>Basic brake cleaning</li>
-                <li>Lubrication of drivetrain and all moving parts</li>
-                <li>Tightening of bolts</li>
-              </ul>
+            <div class="add-on-card">
+              <h3 class="add-on-title">Handle Bars</h3>
+              <img src="/images/bike-handlebars.jpg" class="add-on-image">
             </div>
       
-            <div class="service-card">
-              <h3 class="service-title">Bike Locks</h3>
-              <ul class="service-list">
-                <li>Cleaning of drivetrain and bike (Wet wash*)</li>
-                <li>Polishing and rust prevention of bike</li>
-                <li>Adjustment of brakes</li>
-                <li>Brake cleaning with specialized equipment</li>
-                <li>Lubrication of drivetrain and all moving parts</li>
-                <li>Tightening of bolts</li>
-                <li>Custom tyre pressure adjustment</li>
-              </ul>
+            <div class="add-on-card">
+              <h3 class="add-on-title">Bike Locks</h3>
+              <div class="add-on-image-container">
+                <img src="/images/bike-locks.jpg" class="add-on-image">
+              </div>
+            </div>
+
+            <div class="add-on-card">
+              <h3 class="add-on-title">Bike Kickstand</h3>
+              <div class="add-on-image-container">
+                <img src="/images/bike-kickstand.jpg" class="add-on-image">
+              </div>
             </div>
           </div>
-      
     </main>
 
     <footer id="contact" class="contact-section">
@@ -109,7 +102,6 @@
           </a>
           <a
             href="mailto:PureRideServices@gmail.com"
-            target="_blank"
             class="contact-item"
           >
             <span class="material-symbols-rounded icon" translate="no">

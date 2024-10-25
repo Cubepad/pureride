@@ -96,11 +96,12 @@
   overflow: hidden;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   transform: perspective(1000px) rotateY(-5deg);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .hero-image-container:hover {
   transform: perspective(1000px) rotateY(0deg);
+  box-shadow: 0 20px 40px var(--primary-shadow-darker);
 }
 
 .hero-image {
@@ -108,6 +109,12 @@
   max-height: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+@media (max-width: 1024px) {
+  .add-on-card:nth-child(3) {
+    flex: 1 1 100%;
+  }
 }
 
 @media (max-width: 768px) {
