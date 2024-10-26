@@ -4,6 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PureRide</title>
+    <meta name="description" content="PureRide provides expert bike service and repair with professional-grade, affordable options tailored for the community. Trust our mechanics for all your cycling needs, from basic maintenance to advanced repairs." />
+    <meta name="author" content="PureRide Services Team" />
+    <meta property="og:title" content="PureRide - Expert Bike Service & Repair" />
+    <meta property="og:description" content="Keep your bike in top condition with PureRide’s professional bike service and repair, offering packages suited for all your needs." />
+    <meta property="og:image" content="https://pureride.pages.dev/images/hero-section%20bike-light.jpg" />
+    <meta property="og:url" content="https://pureride.pages.dev" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="PureRide - Expert Bike Service & Repair" />
+    <meta name="twitter:description" content="Trust PureRide for all your bike service and repair needs, from regular maintenance to complete overhauls." />
+    <meta name="twitter:image" content="https://pureride.pages.dev/images/hero-section%20bike-light.jpg" />
+    <meta name="robots" content="index, follow" />    
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -23,7 +36,7 @@
   <body>
     <header class="header">
       <div class="header-container">
-        <div class="logo">PureRide</div>
+        <a href="index.html" class="logo">PureRide</a>
         <nav class="right-section">
           <ul class="nav-links">
             <li>
@@ -68,7 +81,7 @@
           >
         </div>
         <div class="hero-image-container">
-          <img src="images/hero-section bike-light.jpg" class="hero-image" />
+          <img src="images/hero-section bike-light.jpg" class="hero-image" alt="PureRide's showcase bike: a sleek silver fixed-gear with brown leather details, displayed against a light wall."/>
         </div>
       </div>
     </section>
@@ -80,7 +93,7 @@
           <div class="about-content">
             <p>We are two passionate CIS students who started PureRide as part of our Sustainable Development project. Our mission is to make professional bike servicing accessible and affordable for everyone in our community.</p>
             <br>
-            <p>With our mechanic's extensive experience in bike maintenance and repair, spanning over several years of hands-on work with various bike types and brands, we bring professional-grade service at student-friendly prices. His deep knowledge of bike mechanics and attention to detail ensures that every bike we service leaves in perfect riding condition.</p>
+            <p>With our mechanic's extensive experience in bike maintenance and repair, spanning over several years of hands-on work with various bike types and brands, we bring professional-grade service at student-friendly prices. Their deep knowledge of bike mechanics and attention to detail ensures that every bike we service leaves in perfect riding condition.</p>
           </div>
         </div>
       </section>
@@ -158,15 +171,15 @@
             </span>
             +45 51 18 19 12
           </a>
-          <a
-            href="mailto:PureRideServices@gmail.com"
-            class="contact-item"
+          <button 
+            class="contact-item email-copy-btn"
+            onclick="copyEmail()"
           >
-            <span class="material-symbols-rounded icon" translate="no">
-              mail
-            </span>
-            PureRideServices@gmail.com
-          </a>
+          <span class="material-symbols-rounded icon" translate="no">
+            mail
+          </span>
+          PureRideServices@gmail.com
+        </button>
           <a
             href="https://www.instagram.com/pureride_servicing?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
             target="_blank"
@@ -187,6 +200,9 @@
             </svg>
             Instagram
           </a>
+        </div>
+        <div id="copy-notification" class="copy-notification contact-item icon" translate="no">
+          Email copied to clipboard!
         </div>
       </section>
       <p class="copyright">

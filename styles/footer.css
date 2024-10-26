@@ -56,7 +56,6 @@
   font-size: 1.5rem;
 }
 
-
 .contact-item:hover {
   background-color: var(--secondary-color);
   transform: translateY(-2px);
@@ -68,6 +67,31 @@
   color: var(--pure-white);
   font-size: 24px;
 }
+
+.email-copy-btn {
+  cursor: pointer;
+}
+
+.copy-notification {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(100px);
+  background-color: var(--primary-color);
+  color: var(--pure-white);
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px var(--primary-shadow);
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.copy-notification.show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+
 
 .copyright {
   margin: auto;

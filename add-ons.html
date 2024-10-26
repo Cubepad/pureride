@@ -4,6 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PureRide</title>
+    <meta name="description" content="Discover essential add-ons for your bike, from lights and locks to kickstands, enhancing your PureRide experience with convenient and affordable extras." />
+    <meta name="author" content="PureRide Services Team" />
+    <meta property="og:title" content="PureRide - Bike Service Add-ons" />
+    <meta property="og:description" content="Enhance your bike with PureRide’s add-ons like lights, locks, and more, perfect for safer, more convenient rides." />
+    <meta property="og:image" content="https://pureride.pages.dev/images/bike-light.jpg" />
+    <meta property="og:url" content="https://pureride.pages.dev/add-ons.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="PureRide - Bike Service Add-ons" />
+    <meta name="twitter:description" content="Choose from our bike add-ons like lights, locks, and kickstands to make your PureRide smoother and safer." />
+    <meta name="twitter:image" content="https://pureride.pages.dev/images/bike-light.jpg" />
+    <meta name="robots" content="index, follow" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -23,7 +36,7 @@
   <body>
     <header class="header">
       <div class="header-container">
-        <div class="logo">PureRide</div>
+        <a href="index.html" class="logo">PureRide</a>
         <nav class="right-section">
           <ul class="nav-links">
             <li>
@@ -51,7 +64,7 @@
       </div>
     </header>
 
-    <main>
+    <main> 
       <section id="add-ons" class="add-ons">
         <div class="add-on-container">
           <h2 class="add-ons-title">Add-ons</h2>
@@ -61,29 +74,31 @@
             <div class="add-on-card">
               <h3 class="add-on-title">Bike Lights</h3>
               <div class="add-on-image-container">
-                <img src="/images/bike-light.jpg" class="add-on-image">
+                <img src="/images/bike-light.jpg" class="add-on-image" alt="Bicycle headlight mounted on black frame above brown tire, providing illumination for safer night riding.">
               </div>
             </div>
 
             <div class="add-on-card">
               <h3 class="add-on-title">Handle Bars</h3>
-              <img src="/images/bike-handlebars.jpg" class="add-on-image">
+              <img src="/images/bike-handlebars.jpg" class="add-on-image" alt="Close-up of bicycle handlebars with ergonomic grips, brake lever, and bell mounted on silver stem against blurred background.">
             </div>
       
             <div class="add-on-card">
               <h3 class="add-on-title">Bike Locks</h3>
               <div class="add-on-image-container">
-                <img src="/images/bike-locks.jpg" class="add-on-image">
+                <img src="/images/bike-locks.jpg" class="add-on-image" alt="Close-up of weatherproof combination bike lock showing numbered dials with water droplets on black metal surface">
               </div>
             </div>
 
             <div class="add-on-card">
               <h3 class="add-on-title">Bike Kickstand</h3>
               <div class="add-on-image-container">
-                <img src="/images/bike-kickstand.jpg" class="add-on-image">
+                <img src="/images/bike-kickstand.jpg" class="add-on-image" alt="Black adjustable kickstand supporting a bicycle on sandy ground, with white tire and disc brake visible in frame.">
               </div>
             </div>
           </div>
+        </div>
+      </section>
     </main>
 
     <footer id="contact" class="contact-section">
@@ -100,15 +115,15 @@
             </span>
             +45 51 18 19 12
           </a>
-          <a
-            href="mailto:PureRideServices@gmail.com"
-            class="contact-item"
+          <button 
+            class="contact-item email-copy-btn"
+            onclick="copyEmail()"
           >
-            <span class="material-symbols-rounded icon" translate="no">
-              mail
-            </span>
-            PureRideServices@gmail.com
-          </a>
+          <span class="material-symbols-rounded icon" translate="no">
+            mail
+          </span>
+          PureRideServices@gmail.com
+        </button>
           <a
             href="https://www.instagram.com/pureride_servicing?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
             target="_blank"
@@ -129,6 +144,9 @@
             </svg>
             Instagram
           </a>
+        </div>
+        <div id="copy-notification" class="copy-notification contact-item icon" translate="no">
+          Email copied to clipboard!
         </div>
       </section>
       <p class="copyright">

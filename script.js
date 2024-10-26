@@ -29,4 +29,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+function copyEmail() {
+  const email = "PureRideServices@gmail.com";
+  navigator.clipboard.writeText(email)
+    .then(() => {
+      const notification = document.getElementById('copy-notification');
+      notification.classList.add('show');
+      
+      // Hide notification after 3 seconds
+      setTimeout(() => {
+        notification.classList.remove('show');
+      }, 3000);
+    })
+    .catch(err => {
+      console.error('Failed to copy email:', err);
+    });
+}
+
 document.getElementById("year").textContent = new Date().getFullYear();
