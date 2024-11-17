@@ -126,6 +126,14 @@
   margin-bottom: 1.5rem;
 }
 
+.donate-section {
+  background-color: var(--bg-white);
+  padding: 10rem 2rem 14rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (max-width: 768px) {
   .services-title {
     font-size: 2.5rem;
