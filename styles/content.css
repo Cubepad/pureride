@@ -1,9 +1,11 @@
-.services {
+.services,
+.payment {
   padding: 6rem 2rem;
   background-color: var(--bg-white);
 }
 
-.services-container {
+.services-container,
+.payment-container {
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -41,7 +43,8 @@
   flex: 1;
 }
 
-.service-card:hover {
+.service-card:hover,
+.payment-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 30px var(--primary-shadow-darker);
 }
@@ -134,6 +137,38 @@
   align-items: center;
 }
 
+.payment-image {
+  width: 100%;
+}
+
+.payment-card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4rem;
+  margin-top: 3rem;
+}
+
+.payment-card-container p {
+  font-size: 1.5rem;
+  color: var(--text-gray);
+}
+
+.payment-card {
+  background-color: var(--pure-white);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 600px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: var(--text-gray);
+}
+
 @media (max-width: 768px) {
   .services-title {
     font-size: 2.5rem;
@@ -147,11 +182,25 @@
     flex: 1 1 100%;
   }
 
-  .about-title {
+  .about-container-title {
     font-size: 2rem;
   }
 
   .about-content {
+    font-size: 1rem;
+  }
+
+  .payment-card-container {
+    flex-direction: column;
+  }
+
+  .service-card:hover,
+  .payment-card:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .payment-card-container p {
     font-size: 1rem;
   }
 }
