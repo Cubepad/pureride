@@ -8,6 +8,7 @@
   --dark-gray: rgb(31, 41, 55);
   --primary-shadow: rgba(0, 94, 227, 0.2);
   --primary-shadow-darker: rgba(0, 94, 227, 0.3);
+  --header-background-color: rgba(255, 255, 255, 0.7)
 }
 
 * {
