@@ -14,7 +14,7 @@
 }
 
 .header-container {
-  max-width: 1600px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 1rem 2rem;
   display: flex;
@@ -76,12 +76,11 @@
     background: none;
     border: none;
     cursor: pointer;
-    padding: 4px;
     z-index: 1001;
   }
 
   .menu-icon {
-    font-size: 36px;
+    font-size: 2rem;
     color: var(--secondary-color);
     transition: color 0.3s;
     user-select: none;
